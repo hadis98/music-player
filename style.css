@@ -216,6 +216,49 @@ body {
     transition: width 0.1s linear;
 }
 
+.show {
+    display: block;
+}
+
+.dots {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 300;
+}
+
+.dots::before,
+.dots::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.dots::before {
+    box-shadow: -24px 0 currentColor;
+    animation: d8-1 1s infinite linear;
+}
+
+.dots::after {
+    transform: rotate(0deg) translateX(24px);
+    animation: d8-2 1s infinite linear;
+}
+
+@keyframes d8-1 {
+    100% {
+        transform: translateX(24px)
+    }
+}
+
+@keyframes d8-2 {
+    100% {
+        transform: rotate(-180deg) translateX(24px)
+    }
+}
+
 @media (max-width:568px) {
     .music-container {
         width: 95%;

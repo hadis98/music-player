@@ -1,3 +1,26 @@
+// switch (document.readyState) {
+//     case "loading":
+//         console.log('loading');
+//         document.querySelector(".dots-8").classList.add("show");
+//         break;
+//     case "interactive":
+//         console.log('interative');
+//         // The document has finished loading. We can now access the DOM elements.
+//         // But sub-resources such as scripts, images, stylesheets and frames are still loading.
+//         // const span = document.createElement("span");
+//         // span.textContent = "A <span> element.";
+//         // document.body.appendChild(span);
+//         document.querySelector(".dots-8").classList.remove("show");
+//         break;
+//     case "complete":
+//         // The page is fully loaded.
+//         console.log(
+//             "The first CSS rule is: " +
+//             document.styleSheets[0].cssRules[0].cssText
+//         );
+//         break;
+// }
+
 const musicContainer = document.querySelector('.music-container');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
@@ -17,7 +40,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // song titles
-const songs = ['Just a Matter of Time', 'La-Vie-En-Rose', 'Rainy City', 'When She Flows'];
+const songs = ['A Serious Game', 'La-Vie-En-Rose', 'Rainy City', 'When She Flows'];
 
 // keep track of song
 let songIndex = 2;
@@ -127,7 +150,7 @@ function DurTime(e) {
 }
 
 // event listners
-console.log(playBtn);
+
 playBtn.addEventListener('click', () => {
     console.log('hello', musicContainer);
     const isPlaying = musicContainer.classList.contains('play');
