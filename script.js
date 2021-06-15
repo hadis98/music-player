@@ -17,7 +17,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // song titles
-const songs = ['Before You Go', 'Sun Is Never Going Down', 'End of Time'];
+const songs = ['Just a Matter of Time', 'La-Vie-En-Rose', 'Rainy City', 'When She Flows'];
 
 // keep track of song
 let songIndex = 2;
