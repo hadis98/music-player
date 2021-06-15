@@ -8,10 +8,22 @@
     <title>Music Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+    <svg id="gradient-rotate" preserveAspectRatio="none" viewBox="0 0 500 500">
+        <defs>
+          <linearGradient x1="0%" y1="0%" y2="100%" id="a">
+            <stop id="color-stop-1" stop-color="#22C8F6" offset="0%"></stop>
+            <stop id="color-stop-2" stop-color="#20C498" offset="65%"></stop>
+            <stop id="color-stop-3" stop-color="#189932" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <path fill="url(#a)" d="M0 0h500v500H0z"></path>
+      </svg>
     <h1 id="header">MUSIC PLAYER</h1>
     <div class="music-container">
         <div class="music-info">
