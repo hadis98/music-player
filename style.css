@@ -144,7 +144,8 @@ body {
 
 @media (max-width:568px) {
     .music-container {
-        width: 90%;
+        width: 95%;
+        padding: 1.4rem 0.8rem;
     }
     .navigation {
         width: 40%;
@@ -157,12 +158,12 @@ body {
 
 @media (max-width:380px) {
     .music-container {
-        padding: 20px 5px;
+        padding: 1.4rem 0.4rem;
         margin: 0;
         justify-content: space-evenly;
     }
     .navigation {
-        width: 30%;
+        width: 60%;
     }
     .img-container {
         width: 70px;

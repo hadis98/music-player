@@ -17,7 +17,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // song titles
-const songs = ['Before You Go', 'Sun Is Never Going Down', 'In The Name Of Love', 'Bruises', 'High On Life'];
+const songs = ['Before You Go', 'Sun Is Never Going Down', 'End of Time'];
 
 // keep track of song
 let songIndex = 2;
