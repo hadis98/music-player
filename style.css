@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
+    font-family: 'Pangolin', cursive;
 }
 
 #gradient-rotate {
@@ -85,10 +86,11 @@ body {
 }
 
 #header {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
     text-align: center;
     color: #1F3B4D;
     z-index: 3;
+    font-size: 3rem;
 }
 
 .music-container {
@@ -184,6 +186,7 @@ body {
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
     z-index: 0;
+    font-size: 1.2rem;
 }
 
 .music-container.play .music-info {
@@ -225,6 +228,9 @@ body {
         padding: 1.2rem;
         padding-bottom: 2rem;
     }
+    #header {
+        margin-bottom: 7rem;
+    }
 }
 
 @media (max-width:380px) {
@@ -246,7 +252,8 @@ body {
         margin: 0 8px;
     }
     #header {
-        margin-bottom: 9rem;
+        font-size: 2rem;
+        margin-bottom: 12rem;
     }
     .img-container::after {
         top: -10%;
